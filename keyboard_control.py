@@ -25,10 +25,9 @@ frame_read = tello.get_frame_read()
 battry_read = tello.get_battery()
 
 while True:
-    img = frame_read.frame
-    bat = battry_read
+    img = tello.get_frame_read().frame
+    img = cv2.resize(img, (720, 480))
     cv2.imshow("Tello", img)
-    cv2.imshow("battery", bat)
 
     key = cv2.waitKey(1) & 0xff
     if key == 32: #Space
