@@ -5,11 +5,6 @@ takeoff using space
 move w(forward), a(left), s(back), d(right),r(up), f(down)
 rotaion: q(left), e(right)
 flip: i(forward), j(to left), k(backward), l(to right)
-
-soon to be add:
-- battry percentage
-- speed
-- signal streight
 """
 
 
