@@ -3,6 +3,7 @@
         - battry percentage
         - speed
         - signal streight
+        - flight time
         - ...
 
 - Motion_detect.py
