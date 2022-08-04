@@ -17,12 +17,10 @@ tello.connect()
 
 tello.streamon()
 frame_read = tello.get_frame_read()
-battry_read = tello.get_battery()
 
 while True:
     img = frame_read.frame
     img = cv2.resize(img, (720, 480))
-    img = battry_read.as_integer_ratio
     cv2.imshow("Dji Tello", img)
 
     key = cv2.waitKey(1) & 0xff
